@@ -1,0 +1,63 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    background: #333;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    place-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.grid {
+    display: grid;
+    color: #fff;
+}
+
+.grid1 {
+    width: 600px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.item1 {
+    background-color: steelblue;
+    padding: 1rem;
+    grid-column: 1 / 5;
+}
+
+.item2 {
+    background-color: rgb(180, 70, 70);
+    padding: 1rem;
+    grid-row: 2 / 5;
+}
+
+.tesk {
+    background-color: rgb(240, 0, 188);
+    grid-column: 2 / 4;
+    padding: 1rem;
+}
+
+.item3 {
+    background: rgb(156, 180, 70);
+    padding: 1rem;
+    grid-column: 2 / 4;
+    grid-row: 3 / 5;
+}
+
+.item4 {
+    background-color: rgb(70, 180, 88);
+    padding: 1rem;
+    grid-column: 4 / 5;
+    grid-row: 2 / 5;
+
+}
+
+.item5 {
+    background: rgb(81, 70, 180);
+    padding: 1rem;
+    grid-column: 1 / 5;
+}

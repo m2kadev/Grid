@@ -1,0 +1,49 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    background: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.grid {
+    display: grid;
+    color: #fff;
+}
+
+.grid1 {
+    grid-template-columns: auto 1fr auto;
+    grid-template-rows: auto 1fr auto;
+    width: 100vw;
+    height: 100vh;
+}
+
+.item1 {
+    background-color: steelblue;
+    grid-column: 1 / 4;
+    padding: 1rem;
+}
+
+.item2 {
+    background-color: rgb(180, 70, 70);
+    padding: 1rem;
+}
+
+.item3 {
+    background: rgb(156, 180, 70);
+    padding: 1rem;
+}
+
+.item4 {
+    background-color: rgb(70, 180, 88);
+    padding: 1rem;
+}
+
+.item5 {
+    background: rgb(81, 70, 180);
+    grid-column: 1 / 4;
+    padding: 1rem;
+}
+
